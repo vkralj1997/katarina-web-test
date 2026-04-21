@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hairdresser Katarina</title>
+  <meta name="description" content="Hairdresser Katarina - Termine, Öffnungszeiten, Galerie, Preise und Kontakt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="live-datetime">
+        <span class="live-label" data-de="Heute" data-en="Today" data-hr="Danas">Heute</span>
+        <strong id="liveDate">--</strong>
+        <span id="liveTime">--:--</span>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-contact">
+          <a href="tel:+490000000000">+49 000 0000000</a>
+          <a href="https://wa.me/490000000000" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="lang-buttons" aria-label="Language switcher">
+          <button class="lang-switch active" data-lang="de" aria-label="Deutsch">DE</button>
+          <button class="lang-switch" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-switch" data-lang="hr" aria-label="Hrvatski">HR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Hairdresser <span>Katarina</span></a>
+      <nav class="nav">
+        <a href="#appointments" data-de="Termine" data-en="Appointments" data-hr="Termini">Termine</a>
+        <a href="#gallery" data-de="Galerie" data-en="Gallery" data-hr="Galerija">Galerie</a>
+        <a href="#prices" data-de="Preise" data-en="Prices" data-hr="Cjenik">Preise</a>
+        <a href="#contact" data-de="Kontakt" data-en="Contact" data-hr="Kontakt">Kontakt</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#appointments" data-de="Termine" data-en="Appointments" data-hr="Termini">Termine</a>
+      <a href="#gallery" data-de="Galerie" data-en="Gallery" data-hr="Galerija">Galerie</a>
+      <a href="#prices" data-de="Preise" data-en="Prices" data-hr="Cjenik">Preise</a>
+      <a href="#contact" data-de="Kontakt" data-en="Contact" data-hr="Kontakt">Kontakt</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-de="Willkommen" data-en="Welcome" data-hr="Dobrodošli">Willkommen</p>
+          <h1 data-de="Einfach Termin anfragen und schnell Kontakt aufnehmen" data-en="Request an appointment and get in touch quickly" data-hr="Jednostavno zatraži termin i brzo stupi u kontakt">Einfach Termin anfragen und schnell Kontakt aufnehmen</h1>
+          <p class="hero-text" data-de="Hairdresser Katarina zeigt Kundinnen und Kunden sofort Termine, Öffnungszeiten, Preise und Kontaktmöglichkeiten. So finden Besucher schnell alle wichtigen Infos an einem Ort." data-en="Hairdresser Katarina immediately shows customers appointments, opening hours, prices and contact options. Visitors can quickly find all important information in one place." data-hr="Hairdresser Katarina odmah prikazuje termine, radno vrijeme, cijene i kontakt. Posjetitelji tako brzo pronalaze sve važne informacije na jednom mjestu.">Hairdresser Katarina zeigt Kundinnen und Kunden sofort Termine, Öffnungszeiten, Preise und Kontaktmöglichkeiten. So finden Besucher schnell alle wichtigen Infos an einem Ort.</p>
+          <div class="hero-actions">
+            <a href="#appointments" class="btn" data-de="Termin anfragen" data-en="Request appointment" data-hr="Zatraži termin">Termin anfragen</a>
+            <a href="https://wa.me/490000000000" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="tel:+490000000000" class="btn btn-light">+49 000 0000000</a>
+          </div>
+          <div class="hero-info-grid">
+            <div class="mini-card">
+              <span data-de="Öffnungszeiten" data-en="Opening hours" data-hr="Radno vrijeme">Öffnungszeiten</span>
+              <strong data-de="Mo - Fr<br>09:00 - 18:00" data-en="Mon - Fri<br>09:00 - 18:00" data-hr="Pon - Pet<br>09:00 - 18:00">Mo - Fr<br>09:00 - 18:00</strong>
+            </div>
+            <div class="mini-card">
+              <span data-de="Termin" data-en="Appointments" data-hr="Termini">Termin</span>
+              <strong data-de="Telefon, WhatsApp<br>oder Formular" data-en="Phone, WhatsApp<br>or form" data-hr="Telefon, WhatsApp<br>ili obrazac">Telefon, WhatsApp<br>oder Formular</strong>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image image-placeholder">
+          <div>
+            <strong data-de="Hauptfoto" data-en="Main photo" data-hr="Glavna fotografija">Hauptfoto</strong>
+            <span data-de="Hier kannst du später ein Bild einfügen" data-en="Add your image here later" data-hr="Ovdje kasnije možeš dodati sliku">Hier kannst du später ein Bild einfügen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="appointments">
+      <div class="container split-grid">
+        <div class="panel">
+          <p class="eyebrow" data-de="Termine" data-en="Appointments" data-hr="Termini">Termine</p>
+          <h2 data-de="Freie Zeiten und Öffnungszeiten" data-en="Available times and opening hours" data-hr="Slobodni termini i radno vrijeme">Freie Zeiten und Öffnungszeiten</h2>
+          <p class="muted" data-de="Oben links sehen Besucher immer das aktuelle Datum und die Uhrzeit. So erkennen sie schnell, an welchem Tag sie einen Termin anfragen möchten." data-en="Visitors always see the current date and time at the top left. That makes it easier to know which day they want to request an appointment for." data-hr="Gore lijevo posjetitelji uvijek vide trenutačni datum i vrijeme. Tako lakše znaju za koji dan žele zatražiti termin.">Oben links sehen Besucher immer das aktuelle Datum und die Uhrzeit. So erkennen sie schnell, an welchem Tag sie einen Termin anfragen möchten.</p>
+
+          <div class="schedule-box">
+            <div class="schedule-header">
+              <strong data-de="Beispiel für freie Termine" data-en="Example available slots" data-hr="Primjer slobodnih termina">Beispiel für freie Termine</strong>
+              <span data-de="Beispiel" data-en="Example" data-hr="Primjer">Beispiel</span>
+            </div>
+            <div class="schedule-list">
+              <div class="schedule-item"><span data-de="Montag" data-en="Monday" data-hr="Ponedjeljak">Montag</span><strong>09:00 - 12:00</strong></div>
+              <div class="schedule-item"><span data-de="Dienstag" data-en="Tuesday" data-hr="Utorak">Dienstag</span><strong>11:00 - 17:00</strong></div>
+              <div class="schedule-item"><span data-de="Mittwoch" data-en="Wednesday" data-hr="Srijeda">Mittwoch</span><strong>09:00 - 15:00</strong></div>
+              <div class="schedule-item"><span data-de="Donnerstag" data-en="Thursday" data-hr="Četvrtak">Donnerstag</span><strong>10:00 - 18:00</strong></div>
+              <div class="schedule-item"><span data-de="Freitag" data-en="Friday" data-hr="Petak">Freitag</span><strong>09:00 - 14:00</strong></div>
+              <div class="schedule-item"><span data-de="Samstag" data-en="Saturday" data-hr="Subota">Samstag</span><strong data-de="Auf Anfrage" data-en="On request" data-hr="Na upit">Auf Anfrage</strong></div>
+            </div>
+          </div>
+
+          <div class="opening-times">
+            <h3 data-de="Öffnungszeiten" data-en="Opening hours" data-hr="Radno vrijeme">Öffnungszeiten</h3>
+            <p data-de="Montag - Freitag: 09:00 - 18:00" data-en="Monday - Friday: 09:00 - 18:00" data-hr="Ponedjeljak - Petak: 09:00 - 18:00">Montag - Freitag: 09:00 - 18:00</p>
+            <p data-de="Samstag: Nach Vereinbarung" data-en="Saturday: By appointment" data-hr="Subota: Po dogovoru">Samstag: Nach Vereinbarung</p>
+            <p data-de="Sonntag: Geschlossen" data-en="Sunday: Closed" data-hr="Nedjelja: Zatvoreno">Sonntag: Geschlossen</p>
+          </div>
+        </div>
+
+        <div class="panel form-panel">
+          <p class="eyebrow" data-de="Anfrage" data-en="Request" data-hr="Upit">Anfrage</p>
+          <h2 data-de="Kontakt- und Terminformular" data-en="Contact and appointment form" data-hr="Kontakt i obrazac za termin">Kontakt- und Terminformular</h2>
+          <form id="appointmentForm" class="booking-form">
+            <label>
+              <span data-de="Name" data-en="Name" data-hr="Ime">Name</span>
+              <input type="text" id="name" placeholder="Dein Name" data-placeholder-de="Dein Name" data-placeholder-en="Your name" data-placeholder-hr="Tvoje ime" required>
+            </label>
+            <label>
+              <span data-de="Telefon" data-en="Phone" data-hr="Telefon">Telefon</span>
+              <input type="text" id="phone" placeholder="Deine Telefonnummer" data-placeholder-de="Deine Telefonnummer" data-placeholder-en="Your phone number" data-placeholder-hr="Tvoj broj telefona" required>
+            </label>
+            <label>
+              <span data-de="Wunschtermin" data-en="Preferred date" data-hr="Željeni datum">Wunschtermin</span>
+              <input type="date" id="date" required>
+            </label>
+            <label>
+              <span data-de="Uhrzeit" data-en="Preferred time" data-hr="Vrijeme">Uhrzeit</span>
+              <input type="time" id="time" required>
+            </label>
+            <label>
+              <span data-de="Nachricht" data-en="Message" data-hr="Poruka">Nachricht</span>
+              <textarea id="message" rows="5" placeholder="Welche Behandlung wünschst du?" data-placeholder-de="Welche Behandlung wünschst du?" data-placeholder-en="Which treatment would you like?" data-placeholder-hr="Koji tretman želiš?"></textarea>
+            </label>
+            <button type="submit" class="btn full" data-de="Anfrage per E-Mail senden" data-en="Send request by email" data-hr="Pošalji upit e-mailom">Anfrage per E-Mail senden</button>
+          </form>
+          <p class="form-note" data-de="Das Formular öffnet aktuell das E-Mail-Programm der Kundin oder des Kunden. Später kannst du auch ein echtes Online-Formular einbauen." data-en="The form currently opens the customer's email app. Later you can connect a real online contact form." data-hr="Obrazac trenutno otvara e-mail program korisnika. Kasnije možeš dodati pravi online obrazac.">Das Formular öffnet aktuell das E-Mail-Programm der Kundin oder des Kunden. Später kannst du auch ein echtes Online-Formular einbauen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="gallery">
+      <div class="container">
+        <p class="eyebrow center" data-de="Galerie" data-en="Gallery" data-hr="Galerija">Galerie</p>
+        <h2 class="center" data-de="Einblicke in deine Arbeit" data-en="Examples of your work" data-hr="Primjeri tvoga rada">Einblicke in deine Arbeit</h2>
+        <p class="center narrow muted" data-de="Hier kannst du später Fotos von Haarschnitten, Farbe, Styling oder deinem Salon einfügen." data-en="Here you can later add photos of haircuts, color work, styling or your salon." data-hr="Ovdje kasnije možeš dodati slike šišanja, bojenja, frizura ili salona.">Hier kannst du später Fotos von Haarschnitten, Farbe, Styling oder deinem Salon einfügen.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item image-placeholder"><div><strong data-de="Galerie 1" data-en="Gallery 1" data-hr="Galerija 1">Galerie 1</strong><span data-de="Bildplatzhalter" data-en="Image placeholder" data-hr="Mjesto za sliku">Bildplatzhalter</span></div></div>
+          <div class="gallery-item image-placeholder"><div><strong data-de="Galerie 2" data-en="Gallery 2" data-hr="Galerija 2">Galerie 2</strong><span data-de="Bildplatzhalter" data-en="Image placeholder" data-hr="Mjesto za sliku">Bildplatzhalter</span></div></div>
+          <div class="gallery-item image-placeholder"><div><strong data-de="Galerie 3" data-en="Gallery 3" data-hr="Galerija 3">Galerie 3</strong><span data-de="Bildplatzhalter" data-en="Image placeholder" data-hr="Mjesto za sliku">Bildplatzhalter</span></div></div>
+          <div class="gallery-item image-placeholder"><div><strong data-de="Galerie 4" data-en="Gallery 4" data-hr="Galerija 4">Galerie 4</strong><span data-de="Bildplatzhalter" data-en="Image placeholder" data-hr="Mjesto za sliku">Bildplatzhalter</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prices">
+      <div class="container">
+        <p class="eyebrow center" data-de="Preise" data-en="Prices" data-hr="Cjenik">Preise</p>
+        <h2 class="center" data-de="Beispiel für Leistungen und Preise" data-en="Example services and prices" data-hr="Primjer usluga i cijena">Beispiel für Leistungen und Preise</h2>
+        <p class="center narrow muted" data-de="Die untenstehenden Preise sind Beispielpreise und können später ganz einfach angepasst werden." data-en="The prices below are example prices and can easily be adjusted later." data-hr="Cijene ispod su primjeri i kasnije se mogu vrlo jednostavno promijeniti.">Die untenstehenden Preise sind Beispielpreise und können später ganz einfach angepasst werden.</p>
+
+        <div class="price-columns">
+          <div class="price-card">
+            <h3 data-de="Damen" data-en="Women" data-hr="Žene">Damen</h3>
+            <div class="price-list">
+              <div class="price-item"><span data-de="Waschen, Schneiden, Föhnen" data-en="Wash, cut, blow-dry" data-hr="Pranje, šišanje, feniranje">Waschen, Schneiden, Föhnen</span><strong>54 €</strong></div>
+              <div class="price-item"><span data-de="Nur Schneiden" data-en="Cut only" data-hr="Samo šišanje">Nur Schneiden</span><strong>39 €</strong></div>
+              <div class="price-item"><span data-de="Ansatzfarbe" data-en="Root color" data-hr="Bojanje izrasta">Ansatzfarbe</span><strong>43 €</strong></div>
+              <div class="price-item"><span data-de="Strähnen kurz" data-en="Highlights short hair" data-hr="Pramenovi kratka kosa">Strähnen kurz</span><strong>69 €</strong></div>
+              <div class="price-item"><span data-de="Balayage ab" data-en="Balayage from" data-hr="Balayage od">Balayage ab</span><strong>119 €</strong></div>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <h3 data-de="Herren & Extras" data-en="Men & extras" data-hr="Muškarci i dodaci">Herren & Extras</h3>
+            <div class="price-list">
+              <div class="price-item"><span data-de="Herrenhaarschnitt" data-en="Men's haircut" data-hr="Muško šišanje">Herrenhaarschnitt</span><strong>29 €</strong></div>
+              <div class="price-item"><span data-de="Maschinenschnitt" data-en="Clipper cut" data-hr="Šišanje mašinicom">Maschinenschnitt</span><strong>21 €</strong></div>
+              <div class="price-item"><span data-de="Bart trimmen" data-en="Beard trim" data-hr="Skraćivanje brade">Bart trimmen</span><strong>14 €</strong></div>
+              <div class="price-item"><span data-de="Augenbrauen" data-en="Eyebrows" data-hr="Obrve">Augenbrauen</span><strong>15 €</strong></div>
+              <div class="price-item"><span data-de="Waschen & Styling" data-en="Wash & styling" data-hr="Pranje i stiliziranje">Waschen & Styling</span><strong>27 €</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container split-grid">
+        <div class="panel">
+          <p class="eyebrow" data-de="Kontakt" data-en="Contact" data-hr="Kontakt">Kontakt</p>
+          <h2 data-de="Schnell erreichbar" data-en="Easy to reach" data-hr="Brzo dostupno">Schnell erreichbar</h2>
+          <p class="muted" data-de="Für Terminanfragen oder Rückfragen kannst du einfach anrufen, per WhatsApp schreiben oder eine E-Mail senden." data-en="For appointments or questions, customers can call, send a WhatsApp message or email." data-hr="Za termine ili dodatna pitanja korisnici mogu nazvati, poslati WhatsApp poruku ili e-mail.">Für Terminanfragen oder Rückfragen kannst du einfach anrufen, per WhatsApp schreiben oder eine E-Mail senden.</p>
+          <ul class="contact-list">
+            <li><strong data-de="Telefon:" data-en="Phone:" data-hr="Telefon:">Telefon:</strong> <a href="tel:+490000000000">+49 000 0000000</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/490000000000" target="_blank" rel="noopener">+49 000 0000000</a></li>
+            <li><strong>E-Mail:</strong> <a href="mailto:info@example.com">info@example.com</a></li>
+            <li><strong data-de="Adresse:" data-en="Address:" data-hr="Adresa:">Adresse:</strong> Musterstraße 12, 00000 Musterstadt</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <p class="eyebrow" data-de="Info" data-en="Info" data-hr="Info">Info</p>
+          <h2 data-de="Wichtige Hinweise" data-en="Important notes" data-hr="Važne napomene">Wichtige Hinweise</h2>
+          <ul class="contact-list">
+            <li data-de="Termine bitte möglichst früh anfragen." data-en="Please request appointments as early as possible." data-hr="Termine je najbolje zatražiti što ranije.">Termine bitte möglichst früh anfragen.</li>
+            <li data-de="Preisänderungen sind jederzeit möglich." data-en="Prices may change at any time." data-hr="Promjene cijena su moguće u bilo kojem trenutku.">Preisänderungen sind jederzeit möglich.</li>
+            <li data-de="Bilder können später einfach in die Galerie eingefügt werden." data-en="Images can easily be added to the gallery later." data-hr="Slike se kasnije mogu jednostavno dodati u galeriju.">Bilder können später einfach in die Galerie eingefügt werden.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Hairdresser Katarina</p>
+      <div class="footer-links">
+        <a href="#" data-de="Impressum" data-en="Legal notice" data-hr="Impressum">Impressum</a>
+        <a href="#" data-de="Datenschutz" data-en="Privacy" data-hr="Privatnost">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
